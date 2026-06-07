@@ -1,0 +1,47 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║    MINI-PROJET N°5 — PARTIE 2 — RAPPORT DE SYNTHÈSE         ║
+╠══════════════════════════════════════════════════════════════╣
+║  Module : Modèles et Algorithmes de Graphes                  ║
+║  ENSA Berrechid — Université Hassan 1er — CI-ISIBD/S6        ║
+╚══════════════════════════════════════════════════════════════╝
+
+1. STRUCTURE DU GRAPHE
+   ─────────────────────────────────────────────────────────
+   • 327 individus (nœuds) reliés par 5818 contacts (arêtes)
+   • Densité = 0.109154 → graphe CREUX (typique des réseaux réels)
+   • Degré moyen = 35.58 contacts par individu
+   • 100.0% des individus sont dans la composante connexe
+     principale → la propagation peut toucher presque tout le monde
+   • Coefficient de clustering = 0.5035
+     → les individus forment des groupes (communautés naturelles)
+
+2. SUPER-PROPAGATEURS (Hubs)
+   ─────────────────────────────────────────────────────────
+   • Le super-propagateur n°1 est Fatima_106 avec 87 contacts
+   • TOP 3 : Fatima_106 (87), Anas_1518 (84), Houda_1332 (77)
+   • Stratégie : vacciner/isoler ces individus en PRIORITÉ
+     → effet maximal sur la réduction de la propagation
+
+3. SITUATION ÉPIDÉMIOLOGIQUE
+   ─────────────────────────────────────────────────────────
+   • Infectés  :   63 / 327 (19.3%)
+   • Vaccinés  :  103 / 327 (31.5%)
+   • Région la plus touchée : Oujda
+     (14 infectés)
+
+4. PROPRIÉTÉ SCALE-FREE (réseau réel)
+   ─────────────────────────────────────────────────────────
+   • La courbe log-log confirme une distribution en loi de puissance
+   • Quelques hubs concentrent une grande partie des connexions
+   • Implication vaccinale : cibler les hubs brise les chaînes
+     de transmission plus efficacement qu'une vaccination aléatoire
+
+5. FICHIERS GÉNÉRÉS
+   ─────────────────────────────────────────────────────────
+   📁 resultats_partie2/
+      ├── 1_reseau_statut.png         ← réseau coloré par statut
+      ├── 2_distribution_degres.png   ← histogramme + log-log
+      ├── 3_dashboard_epidemio.png    ← tableau de bord complet
+      ├── graphe_interactions.gexf    ← pour Gephi
+      └── rapport_partie2.txt         ← ce rapport
